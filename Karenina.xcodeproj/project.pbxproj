@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA459BA11BC1D19800334E9A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA459BA01BC1D19800334E9A /* HealthKit.framework */; };
 		FA59C5A61AF3695900F7B26D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59C5A51AF3695900F7B26D /* AppDelegate.swift */; };
 		FA59C5A81AF3695900F7B26D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59C5A71AF3695900F7B26D /* ViewController.swift */; };
 		FA59C5AB1AF3695900F7B26D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA59C5A91AF3695900F7B26D /* Main.storyboard */; };
@@ -67,6 +68,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA459B9F1BC1D19800334E9A /* Karenina.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Karenina.entitlements; sourceTree = "<group>"; };
+		FA459BA01BC1D19800334E9A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		FA59C5A01AF3695900F7B26D /* Karenina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karenina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA59C5A41AF3695900F7B26D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA59C5A51AF3695900F7B26D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -90,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA7C5AB31BB9161D00482145 /* ResearchKit.framework in Frameworks */,
+				FA459BA11BC1D19800334E9A /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +121,7 @@
 		FA59C5971AF3695900F7B26D = {
 			isa = PBXGroup;
 			children = (
+				FA459BA01BC1D19800334E9A /* HealthKit.framework */,
 				FA7C5AA91BB9160F00482145 /* ResearchKit.xcodeproj */,
 				FA59C5A21AF3695900F7B26D /* Karenina */,
 				FA59C5B81AF3695900F7B26D /* KareninaTests */,
@@ -136,6 +141,7 @@
 		FA59C5A21AF3695900F7B26D /* Karenina */ = {
 			isa = PBXGroup;
 			children = (
+				FA459B9F1BC1D19800334E9A /* Karenina.entitlements */,
 				FA3F69051BB9071A00BE6526 /* Original Tutorial */,
 				FA59C5A51AF3695900F7B26D /* AppDelegate.swift */,
 				FA59C5A71AF3695900F7B26D /* ViewController.swift */,
@@ -234,6 +240,12 @@
 				TargetAttributes = {
 					FA59C59F1AF3695900F7B26D = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = HLT4EP89K7;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					FA59C5B41AF3695900F7B26D = {
 						CreatedOnToolsVersion = 6.3;
@@ -446,6 +458,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Karenina/Karenina.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/Karenina/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.raywenderlich.$(PRODUCT_NAME:rfc1034identifier)";
@@ -457,6 +471,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Karenina/Karenina.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/Karenina/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.raywenderlich.$(PRODUCT_NAME:rfc1034identifier)";
