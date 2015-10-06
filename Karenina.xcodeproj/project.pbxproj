@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA3F16531BC37F2600E0BF18 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F16521BC37F2600E0BF18 /* HealthKitManager.swift */; settings = {ASSET_TAGS = (); }; };
 		FA459BA11BC1D19800334E9A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA459BA01BC1D19800334E9A /* HealthKit.framework */; };
 		FA59C5A61AF3695900F7B26D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59C5A51AF3695900F7B26D /* AppDelegate.swift */; };
 		FA59C5A81AF3695900F7B26D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59C5A71AF3695900F7B26D /* ViewController.swift */; };
@@ -68,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA3F16521BC37F2600E0BF18 /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		FA459B9F1BC1D19800334E9A /* Karenina.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Karenina.entitlements; sourceTree = "<group>"; };
 		FA459BA01BC1D19800334E9A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		FA59C5A01AF3695900F7B26D /* Karenina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karenina.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +151,7 @@
 				FA59C5AC1AF3695900F7B26D /* Images.xcassets */,
 				FA59C5AE1AF3695900F7B26D /* LaunchScreen.xib */,
 				FA59C5A31AF3695900F7B26D /* Supporting Files */,
+				FA3F16521BC37F2600E0BF18 /* HealthKitManager.swift */,
 			);
 			path = Karenina;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				FA59C5DB1AF3725600F7B26D /* MicrophoneTask.swift in Sources */,
 				FA59C5D91AF3708D00F7B26D /* SurveyTask.swift in Sources */,
 				FA59C5D51AF36AA200F7B26D /* ConsentDocument.swift in Sources */,
+				FA3F16531BC37F2600E0BF18 /* HealthKitManager.swift in Sources */,
 				FA59C5A61AF3695900F7B26D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

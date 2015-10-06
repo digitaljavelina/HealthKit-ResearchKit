@@ -42,6 +42,10 @@ class ViewController: UIViewController, ORKTaskViewControllerDelegate {
     }
   }
   
+  @IBAction func authorize(sender: AnyObject) {
+    HealthKitManager.authorizeHealthKit()
+  }
+  
   func taskViewController(taskViewController: ORKTaskViewController, didFinishWithReason reason: ORKTaskViewControllerFinishReason, error: NSError?) {
     
     // check for a sound file
