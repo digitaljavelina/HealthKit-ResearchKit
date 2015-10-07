@@ -46,6 +46,14 @@ class ViewController: UIViewController, ORKTaskViewControllerDelegate {
     HealthKitManager.authorizeHealthKit()
   }
   
+  @IBAction func walkTapped(sender : AnyObject) {
+    let taskViewController = ORKTaskViewController(task: WalkTask, taskRunUUID: nil)
+    taskViewController.delegate = self
+    taskViewController.outputDirectory = NSURL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0], isDirectory: true)
+    presentViewController(taskViewController, animated: true, completion: nil)
+    HealthKitManager.startMockHeartData()
+  }
+  
   func taskViewController(taskViewController: ORKTaskViewController, didFinishWithReason reason: ORKTaskViewControllerFinishReason, error: NSError?) {
     
     // check for a sound file

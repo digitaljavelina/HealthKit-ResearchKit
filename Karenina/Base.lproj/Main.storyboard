@@ -79,6 +79,17 @@
                                     <action selector="authorize:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wfL-Et-9Hc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3E-LY-H11">
+                                <rect key="frame" x="283" y="358" width="34" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="DyA-Mc-vBX"/>
+                                    <constraint firstAttribute="height" constant="30" id="nIJ-mG-Jf1"/>
+                                </constraints>
+                                <state key="normal" title="Walk"/>
+                                <connections>
+                                    <action selector="walkTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CPV-mn-g2n"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -86,12 +97,14 @@
                             <constraint firstItem="Sa6-Gx-kzM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="64" id="JpW-tu-vMS"/>
                             <constraint firstItem="gxQ-bb-lAw" firstAttribute="top" secondItem="Sa6-Gx-kzM" secondAttribute="bottom" constant="21" id="Mic-Kq-Zna"/>
                             <constraint firstAttribute="centerX" secondItem="0bt-w2-x75" secondAttribute="centerX" constant="-1" id="NAn-HU-qWt"/>
+                            <constraint firstItem="U3E-LY-H11" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="OMu-UI-iJS"/>
                             <constraint firstItem="0bt-w2-x75" firstAttribute="top" secondItem="gxQ-bb-lAw" secondAttribute="bottom" constant="25" id="VFV-ET-zUC"/>
                             <constraint firstAttribute="centerX" secondItem="5ch-eh-Dm7" secondAttribute="centerX" constant="-0.5" id="VIG-rt-ry0"/>
                             <constraint firstAttribute="centerX" secondItem="gxQ-bb-lAw" secondAttribute="centerX" constant="-1" id="b2T-8n-qQe"/>
                             <constraint firstItem="fVN-lh-ILz" firstAttribute="top" secondItem="5ch-eh-Dm7" secondAttribute="bottom" constant="26" id="h9t-XO-Lyf"/>
                             <constraint firstItem="fVN-lh-ILz" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="mAN-i5-FYr"/>
                             <constraint firstAttribute="centerX" secondItem="Sa6-Gx-kzM" secondAttribute="centerX" id="pcs-tk-mkX"/>
+                            <constraint firstItem="U3E-LY-H11" firstAttribute="top" secondItem="fVN-lh-ILz" secondAttribute="bottom" constant="28" id="ziH-nx-sCd"/>
                         </constraints>
                     </view>
                 </viewController>
