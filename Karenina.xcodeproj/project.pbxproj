@@ -22,6 +22,7 @@
 		FA59C5DB1AF3725600F7B26D /* MicrophoneTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59C5DA1AF3725600F7B26D /* MicrophoneTask.swift */; };
 		FA7C5AB31BB9161D00482145 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7C5AB01BB9160F00482145 /* ResearchKit.framework */; };
 		FA7C5AB41BB9161D00482145 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA7C5AB01BB9160F00482145 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA9C4DDE1BC4E91D00D6E8C7 /* ResultParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9C4DDD1BC4E91D00D6E8C7 /* ResultParser.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		FA59C5D81AF3708D00F7B26D /* SurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SurveyTask.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FA59C5DA1AF3725600F7B26D /* MicrophoneTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MicrophoneTask.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FA7C5AA91BB9160F00482145 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		FA9C4DDD1BC4E91D00D6E8C7 /* ResultParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				FA59C5A31AF3695900F7B26D /* Supporting Files */,
 				FA3F16521BC37F2600E0BF18 /* HealthKitManager.swift */,
 				FA3F16561BC3983100E0BF18 /* WalkTask.swift */,
+				FA9C4DDD1BC4E91D00D6E8C7 /* ResultParser.swift */,
 			);
 			path = Karenina;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA59C5A81AF3695900F7B26D /* ViewController.swift in Sources */,
+				FA9C4DDE1BC4E91D00D6E8C7 /* ResultParser.swift in Sources */,
 				FA59C5D71AF36C0700F7B26D /* ConsentTask.swift in Sources */,
 				FA59C5DB1AF3725600F7B26D /* MicrophoneTask.swift in Sources */,
 				FA3F16571BC3983100E0BF18 /* WalkTask.swift in Sources */,

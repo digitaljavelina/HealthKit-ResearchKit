@@ -56,10 +56,24 @@ class ViewController: UIViewController, ORKTaskViewControllerDelegate {
   
   func taskViewController(taskViewController: ORKTaskViewController, didFinishWithReason reason: ORKTaskViewControllerFinishReason, error: NSError?) {
     
-    // check for a sound file
-    soundFileURL = findSoundFile(taskViewController.result)
+    HealthKitManager.stopMockHeartData()
     
-    taskViewController.dismissViewControllerAnimated(true, completion: nil)
+    if (taskViewController.task?.identifier == "WalkTask"
+      && reason == .Completed) {
+        
+        let heartURLs = ResultParser.findWalkHeartFiles(taskViewController.result)
+        
+        for url in heartURLs {
+          do {
+            let string = try NSString.init(contentsOfURL: url, encoding: NSUTF8StringEncoding)
+            print(string)
+          } catch {}
+        }
+    }
+    
+    if (reason != .Failed) {
+      taskViewController.dismissViewControllerAnimated(true, completion: nil)
+    }
   }
   
   func findSoundFile(result: ORKTaskResult) -> NSURL? {
