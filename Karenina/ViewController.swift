@@ -73,6 +73,21 @@ class ViewController: UIViewController, ORKTaskViewControllerDelegate {
   
   func taskViewController(taskViewController: ORKTaskViewController, didFinishWithReason reason: ORKTaskViewControllerFinishReason, error: NSError?) {
     
+    if (taskViewController.task?.identifier == "MusicTask"
+      && reason == .Completed) {
+        
+        let clip = ResultParser.findClip(taskViewController.task)
+        print("clip name: \(clip!.rawValue)")
+        
+        let heartURL = ResultParser.findMusicHeartFiles(taskViewController.result)
+        if let heartURL = heartURL {
+          do {
+            let string = try NSString.init(contentsOfURL: heartURL, encoding: NSUTF8StringEncoding)
+            print(string)
+          } catch {}
+        }
+    }
+    
     HealthKitManager.stopMockHeartData()
     
     if (taskViewController.task?.identifier == "WalkTask"
