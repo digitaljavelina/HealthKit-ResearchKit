@@ -62,6 +62,15 @@ class ViewController: UIViewController, ORKTaskViewControllerDelegate {
     HealthKitManager.startMockHeartData()
   }
   
+  func taskViewController(taskViewController: ORKTaskViewController, viewControllerForStep step: ORKStep) -> ORKStepViewController? {
+    
+    if step.identifier == "music" {
+      return MusicStepViewController(step: step)
+    } else {
+      return nil
+    }
+  }
+  
   func taskViewController(taskViewController: ORKTaskViewController, didFinishWithReason reason: ORKTaskViewControllerFinishReason, error: NSError?) {
     
     HealthKitManager.stopMockHeartData()
