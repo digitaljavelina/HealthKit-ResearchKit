@@ -32,6 +32,7 @@
 		FAA0716E1BC76DFE00AF1A13 /* MusicClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0716D1BC76DFE00AF1A13 /* MusicClip.swift */; settings = {ASSET_TAGS = (); }; };
 		FAA071721BC76E6700AF1A13 /* MusicStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA071711BC76E6700AF1A13 /* MusicStep.swift */; settings = {ASSET_TAGS = (); }; };
 		FAA071741BC76E7F00AF1A13 /* MusicStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA071731BC76E7F00AF1A13 /* MusicStepViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		FAA071761BC77D8300AF1A13 /* MusicTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA071751BC77D8300AF1A13 /* MusicTask.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		FAA0716D1BC76DFE00AF1A13 /* MusicClip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicClip.swift; sourceTree = "<group>"; };
 		FAA071711BC76E6700AF1A13 /* MusicStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicStep.swift; sourceTree = "<group>"; };
 		FAA071731BC76E7F00AF1A13 /* MusicStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicStepViewController.swift; sourceTree = "<group>"; };
+		FAA071751BC77D8300AF1A13 /* MusicTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 				FAA0716D1BC76DFE00AF1A13 /* MusicClip.swift */,
 				FAA071711BC76E6700AF1A13 /* MusicStep.swift */,
 				FAA071731BC76E7F00AF1A13 /* MusicStepViewController.swift */,
+				FAA071751BC77D8300AF1A13 /* MusicTask.swift */,
 			);
 			path = Karenina;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				FAA071741BC76E7F00AF1A13 /* MusicStepViewController.swift in Sources */,
 				FA59C5D51AF36AA200F7B26D /* ConsentDocument.swift in Sources */,
 				FA3F16531BC37F2600E0BF18 /* HealthKitManager.swift in Sources */,
+				FAA071761BC77D8300AF1A13 /* MusicTask.swift in Sources */,
 				FA59C5A61AF3695900F7B26D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

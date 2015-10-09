@@ -90,6 +90,17 @@
                                     <action selector="walkTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CPV-mn-g2n"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGE-sw-TdY">
+                                <rect key="frame" x="280" y="408" width="41" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="TCa-uf-mlj"/>
+                                    <constraint firstAttribute="height" constant="30" id="wP2-t9-oby"/>
+                                </constraints>
+                                <state key="normal" title="Music"/>
+                                <connections>
+                                    <action selector="musicTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ULj-sz-5aC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -104,6 +115,8 @@
                             <constraint firstItem="fVN-lh-ILz" firstAttribute="top" secondItem="5ch-eh-Dm7" secondAttribute="bottom" constant="26" id="h9t-XO-Lyf"/>
                             <constraint firstItem="fVN-lh-ILz" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="mAN-i5-FYr"/>
                             <constraint firstAttribute="centerX" secondItem="Sa6-Gx-kzM" secondAttribute="centerX" id="pcs-tk-mkX"/>
+                            <constraint firstItem="JGE-sw-TdY" firstAttribute="top" secondItem="U3E-LY-H11" secondAttribute="bottom" constant="20" id="tR0-wR-7TM"/>
+                            <constraint firstItem="JGE-sw-TdY" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ut2-qB-AjA"/>
                             <constraint firstItem="U3E-LY-H11" firstAttribute="top" secondItem="fVN-lh-ILz" secondAttribute="bottom" constant="28" id="ziH-nx-sCd"/>
                         </constraints>
                     </view>
